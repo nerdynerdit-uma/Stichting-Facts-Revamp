@@ -1,0 +1,18 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Magnifying glass handle -->
+  <path d="M 70 70 L 85 85" stroke="#411A44" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Magnifying glass lens -->
+  <circle cx="60" cy="60" r="25" fill="none" stroke="#411A44" stroke-width="6"/>
+  
+  <!-- Letter F inside lens -->
+  <g fill="#E98C04">
+    <!-- Vertical bar of F -->
+    <rect x="48" y="50" width="6" height="20" rx="1"/>
+    <!-- Top horizontal bar of F -->
+    <rect x="48" y="50" width="14" height="6" rx="1"/>
+    <!-- Middle horizontal bar of F -->
+    <rect x="48" y="58" width="10" height="6" rx="1"/>
+  </g>
+</svg>
+
