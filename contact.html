@@ -14,13 +14,15 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="images/gallery/SFlogo.png" alt="Stichting Facts Logo">
-                <h1>Stichting Facts</h1>
+                <a href="https://www.stichtingfacts.nl" target="_blank" style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit;">
+                    <img src="images/gallery/SFlogo.png" alt="Stichting Facts Logo">
+                    <h1>Stichting Facts</h1>
+                </a>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Welkom</a></li>
                 <li class="dropdown">
-                    <a href="over-ons.html" class="nav-link">Over Ons <span class="dropdown-arrow">▼</span></a>
+                    <a href="#" class="nav-link dropdown-toggle">Over Ons <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="doelstellingen.html">Doelstellingen</a></li>
                         <li><a href="samenwerkingen.html">Samenwerkingen</a></li>
@@ -29,7 +31,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="projecten.html" class="nav-link">Projecten <span class="dropdown-arrow">▼</span></a>
+                    <a href="#" class="nav-link dropdown-toggle">Projecten <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="project-goals.html">Project Goals</a></li>
                         <li><a href="artletics.html">Artletics</a></li>
@@ -52,7 +54,10 @@
     <section class="page-header">
         <div class="container">
             <h1>Contact</h1>
-            <p>Bij Stichting Facts staan wij altijd klaar om te luisteren, helpen en samen te werken. Heeft u vragen, suggesties of wilt u meer weten over onze projecten? Vul dan het contactformulier in of stuur ons een e-mail via het onderstaande adres. Voor al onze contactgegevens kunt u ook een kijkje nemen op het visitekaartje hieronder. Wij streven ernaar om binnen 48 uur te reageren. Voor dringende zaken kunt u ons direct bellen. Samen kunnen we een verschil maken – wij horen graag van u!</p>
+            <p>Heeft u vragen, ideeën of interesse in samenwerking met Stichting Facts?</p>
+            <p>Wij gaan graag met u in gesprek.</p>
+            <p>U kunt contact met ons opnemen via het contactformulier of per e-mail. Wij streven ernaar om binnen twee werkdagen te reageren. Voor dringende zaken zijn wij telefonisch bereikbaar.</p>
+            <p>Samen werken wij aan gelijke kansen, veerkracht en maatschappelijke impact.</p>
         </div>
     </section>
 
@@ -62,13 +67,27 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Kom in Contact</h3>
-                    <p>We horen graag van je! Of je nu vragen hebt, interesse toont in een van onze projecten, of samenwerking overweegt - neem gerust contact met ons op.</p>
+                    <p>We horen graag van je. Of je nu vragen hebt, interesse hebt in een van onze programma's of een samenwerking wilt verkennen neem gerust contact met ons op.</p>
+                    <p>Samen kijken we graag hoe we kunnen bijdragen aan gelijke kansen en maatschappelijke impact.</p>
                     
                     <h3 style="margin-top: 2rem;">Contactgegevens</h3>
                     <p><strong>Email:</strong><br><span style="color: var(--primary-orange);">info@stichtingfacts.nl</span></p>
                     <p><strong>Raad van Toezicht:</strong><br><span style="color: var(--primary-orange);">rvt@stichtingfacts.nl</span></p>
                     <p><strong>Telefoon:</strong><br>+31623022228</p>
                     <p><strong>Bezoekadres:</strong><br>Westblaak 92<br>3012 KM Rotterdam</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <iframe 
+                            src="https://www.google.com/maps?q=Westblaak+92,+3012+KM+Rotterdam&output=embed" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 600px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Stichting Facts Location - Westblaak 92, 3012 KM Rotterdam">
+                        </iframe>
+                    </div>
                     
                     <div style="margin-top: 2rem;">
                         <img src="images/gallery/contactphoto.jpg" alt="Contact" style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -119,18 +138,19 @@
                     <h4>Navigatie</h4>
                     <ul>
                         <li><a href="index.html">Welkom</a></li>
-                        <li><a href="over-ons.html">Over Ons</a></li>
-                        <li><a href="projecten.html">Projecten</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="nieuws.html">Nieuws</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="algemene-voorwaarden.html">Algemene Voorwaarden</a></li>
+                        <li><a href="privacy.html">Privacy Statement</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: info@stichtingfacts.nl</p>
-                    <p>Telefoon: +31623022228</p>
+                    <p class="footer-email">Email: info@stichtingfacts.nl</p>
+                    <p class="footer-phone">Telefoon: +31623022228</p>
                     <p>Bezoekadres: Westblaak 92<br>3012 KM Rotterdam</p>
+                    <p>Stichting Facts<br>RSIN: 865959705<br>KvK-nummer: 92256864<br>Vestigingsplaats: Rotterdam</p>
                     <div class="social-media">
                         <a href="https://www.facebook.com/profile.php?id=61579023340266" target="_blank" aria-label="Facebook">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -151,7 +171,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Stichting Facts. Alle rechten voorbehouden.</p>
+                <p>&copy; 2026 Stichting Facts. Alle rechten voorbehouden. | Designed by <a href="https://www.nerdynerdit.com" target="_blank" rel="noopener" class="footer-credit">Nerdy Nerd IT</a></p>
             </div>
         </div>
     </footer>

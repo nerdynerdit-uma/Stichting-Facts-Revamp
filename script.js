@@ -20,18 +20,20 @@ if (hamburger) {
     });
 }
 
-// Dropdown menu functionality
+// Dropdown menu functionality - click to toggle, no navigation on parent links
 document.querySelectorAll('.dropdown').forEach(dropdown => {
     const link = dropdown.querySelector('.nav-link');
     
-    // Desktop: hover functionality is handled by CSS
-    // Mobile: click to toggle
-    if (window.innerWidth <= 768) {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            dropdown.classList.toggle('active');
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Close other dropdowns when opening one
+        document.querySelectorAll('.dropdown').forEach(other => {
+            if (other !== dropdown) {
+                other.classList.remove('active');
+            }
         });
-    }
+        dropdown.classList.toggle('active');
+    });
 });
 
 // Close mobile menu when clicking on a link

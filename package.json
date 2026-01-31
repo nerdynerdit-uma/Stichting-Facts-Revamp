@@ -1,0 +1,12 @@
+{
+  "name": "stichting-facts-website",
+  "version": "1.0.0",
+  "description": "Website for Stichting Facts",
+  "scripts": {
+    "start": "http-server -p 8080 -o",
+    "dev": "http-server -p 8080 -o"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
