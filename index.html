@@ -51,13 +51,26 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Welkom bij Stichting Facts</h1>
-            <p class="hero-subtitle slogan">If you can dream it, you can do it.</p>
-            <a href="#projecten-section" class="btn btn-primary">Ontdek Meer</a>
-        </div>
-        <div class="hero-scroll-indicator">
-            <span></span>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-title">Welkom bij Stichting Facts</h1>
+                <p class="hero-subtitle slogan">If you can dream it, you can do it.</p>
+                <a href="#projecten-section" class="btn btn-primary">Ontdek Meer</a>
+            </div>
+            <div class="hero-video">
+                <div class="hero-video-poster" id="heroVideoPoster">
+                    <img src="images/Thumbnail Hero.png" alt="Play Stichting Facts video">
+                    <button type="button" class="hero-video-play" aria-label="Play video">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="40" cy="40" r="40" fill="rgba(233, 140, 4, 0.9)"/>
+                            <path d="M32 26v28l22-14-22-14z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hero-video-embed" id="heroVideoEmbed" hidden>
+                    <iframe id="heroVimeoIframe" data-src="https://player.vimeo.com/video/1161855478?autoplay=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Stichting Facts video"></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -129,23 +142,6 @@
                 <div class="footer-section">
                     <h3>Stichting Facts</h3>
                     <p>Wij zetten ons in voor een betere toekomst door kennis te delen en initiatieven te ondersteunen.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navigatie</h4>
-                    <ul>
-                        <li><a href="index.html">Welkom</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="disclaimer.html">Disclaimer</a></li>
-                        <li><a href="algemene-voorwaarden.html">Algemene Voorwaarden</a></li>
-                        <li><a href="privacy.html">Privacy Statement</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p class="footer-email">Email: info@stichtingfacts.nl</p>
-                    <p class="footer-phone">Telefoon: +31623022228</p>
-                    <p>Stichting Facts<br>RSIN: 865959705<br>KvK-nummer: 92256864<br>Vestigingsplaats: Rotterdam</p>
                     <div class="social-media">
                         <a href="https://www.facebook.com/profile.php?id=61579023340266" target="_blank" aria-label="Facebook">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -163,6 +159,24 @@
                             </svg>
                         </a>
                     </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigatie</h4>
+                    <ul>
+                        <li><a href="index.html">Welkom</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="algemene-voorwaarden.html">Algemene Voorwaarden</a></li>
+                        <li><a href="privacy.html">Privacy Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p class="footer-email">Email: info@stichtingfacts.nl</p>
+                    <p class="footer-phone">Telefoon: +31623022228</p>
+                    <p>Stichting Facts<br>RSIN: 865959705<br>KvK-nummer: 92256864<br>Vestigingsplaats: Rotterdam</p>
+                    <p class="footer-leerbedrijf"><em>Stichting Facts is een erkend leerbedrijf.</em></p>
                 </div>
             </div>
             <div class="footer-bottom">

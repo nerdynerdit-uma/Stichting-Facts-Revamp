@@ -1,3 +1,26 @@
+// Hero video: click thumbnail to load and play Vimeo
+const heroVideoPoster = document.getElementById('heroVideoPoster');
+const heroVideoEmbed = document.getElementById('heroVideoEmbed');
+const heroVimeoIframe = document.getElementById('heroVimeoIframe');
+
+if (heroVideoPoster && heroVideoEmbed && heroVimeoIframe) {
+    function playHeroVideo() {
+        const src = heroVimeoIframe.getAttribute('data-src');
+        if (src) {
+            heroVimeoIframe.setAttribute('src', src);
+            heroVimeoIframe.removeAttribute('data-src');
+        }
+        heroVideoPoster.hidden = true;
+        heroVideoEmbed.hidden = false;
+    }
+
+    heroVideoPoster.addEventListener('click', playHeroVideo);
+    heroVideoPoster.querySelector('.hero-video-play')?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        playHeroVideo();
+    });
+}
+
 // Mobile Navigation Toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
