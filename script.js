@@ -128,49 +128,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form values
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
-        };
-        
-        // Simple form validation
-        if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-            alert('Vul alle verplichte velden in.');
-            return;
-        }
-        
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
-            alert('Vul een geldig e-mailadres in.');
-            return;
-        }
-        
-        // Simulate form submission
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        submitButton.textContent = 'Verzenden...';
-        submitButton.disabled = true;
-        
-        // In a real application, you would send this data to a server
-        setTimeout(() => {
-            alert('Bedankt voor je bericht! We nemen zo spoedig mogelijk contact met je op.');
-            contactForm.reset();
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-        }, 1500);
-    });
-}
-
 // Intersection Observer for fade-in animations
 const observerOptions = {
     threshold: 0.1,

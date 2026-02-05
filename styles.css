@@ -1684,6 +1684,23 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-details h3.contact-opening-title {
+    color: var(--primary-purple);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
 .contact-info p {
     color: var(--text-light);
     margin-bottom: 1rem;
