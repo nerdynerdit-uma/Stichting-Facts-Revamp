@@ -25,13 +25,34 @@ if (heroVideoPoster && heroVideoEmbed && heroVimeoIframe) {
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        
-        // Animate hamburger
+function closeMobileMenu() {
+    if (navMenu) navMenu.classList.remove('active');
+    document.querySelector('.nav-overlay')?.classList.remove('active');
+    document.body.classList.remove('nav-open');
+    if (hamburger) {
         const spans = hamburger.querySelectorAll('span');
-        if (navMenu.classList.contains('active')) {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    }
+}
+
+if (hamburger && navMenu) {
+    // Create overlay for mobile nav (backdrop)
+    const navOverlay = document.createElement('div');
+    navOverlay.className = 'nav-overlay';
+    navOverlay.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(navOverlay);
+
+    navOverlay.addEventListener('click', closeMobileMenu);
+
+    hamburger.addEventListener('click', () => {
+        const isActive = navMenu.classList.toggle('active');
+        navOverlay.classList.toggle('active', isActive);
+        document.body.classList.toggle('nav-open', isActive);
+
+        const spans = hamburger.querySelectorAll('span');
+        if (isActive) {
             spans[0].style.transform = 'rotate(45deg) translateY(8px)';
             spans[1].style.opacity = '0';
             spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
@@ -59,16 +80,9 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
     });
 });
 
-// Close mobile menu when clicking on a link
-const navLinks = document.querySelectorAll('.nav-link:not(.dropdown .nav-link)');
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        const spans = hamburger.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    });
+// Close mobile menu when clicking on a link (direct nav links or dropdown sub-links)
+document.querySelectorAll('.nav-link:not(.dropdown .nav-link), .dropdown-menu a').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
 });
 
 // Close dropdowns when clicking outside
