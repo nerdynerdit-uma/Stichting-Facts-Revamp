@@ -2061,6 +2061,41 @@ body {
         gap: 2rem;
     }
     
+    /* Samenwerkingen page: titles fully visible on mobile – wrap and scale */
+    .collaboration-banner h2,
+    .collaboration-banner .partners-contribute-title {
+        font-size: clamp(1.15rem, 4.5vw, 1.75rem);
+        line-height: 1.35;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+        max-width: 100%;
+        padding: 0 0.25rem;
+        box-sizing: border-box;
+    }
+    
+    .partner-content {
+        min-width: 0;
+    }
+    
+    .partner-content h2 {
+        font-size: clamp(1.15rem, 4.5vw, 1.75rem);
+        line-height: 1.35;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body.page-samenwerkingen .container {
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+    
     .projects-grid,
     .news-grid,
     .gallery-grid {
@@ -2135,6 +2170,13 @@ body {
     
     .contact-form {
         padding: 2rem 1.5rem;
+    }
+    
+    /* Extra-small screens: smaller titles so they fit */
+    .collaboration-banner h2,
+    .collaboration-banner .partners-contribute-title,
+    .partner-content h2 {
+        font-size: clamp(1rem, 4vw, 1.4rem);
     }
 }
 
