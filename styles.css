@@ -2255,3 +2255,209 @@ body.page-financien-beleid .content-divider {
     }
 }
 
+/* Stem op ons – Appeltje van Oranje */
+.stemopons-wrap {
+    margin-top: 0;
+    padding-top: 97px;
+    background: #B83A26;
+}
+
+.stemopons-top-strip {
+    background: #B83A26;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.stemopons-main {
+    background: #E35436;
+    color: #fff;
+    padding: clamp(2.25rem, 5vw, 3.75rem) 1.5rem clamp(3rem, 8vw, 5rem);
+}
+
+.stemopons-main-inner {
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.stemopons-main h1 {
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.stemopons-main p {
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
+    line-height: 1.75;
+    margin-bottom: 1.35rem;
+    text-align: left;
+    color: #fff;
+}
+
+.stemopons-main p:last-of-type {
+    margin-bottom: 0;
+}
+
+.stemopons-inline-cta {
+    display: block;
+    width: fit-content;
+    margin-top: 1.75rem;
+    padding: 0.6rem 1.5rem;
+    background: #fff;
+    color: #E35436 !important;
+    font-weight: 700;
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.stemopons-inline-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+/* Share bar */
+.stemopons-share {
+    max-width: 42rem;
+    margin: 2.5rem auto 0;
+    padding: 0 1.5rem 0.5rem;
+    text-align: center;
+}
+
+.stemopons-share-label {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.stemopons-main .stemopons-share-label,
+.stemopons-main .stemopons-share-copied {
+    text-align: center;
+}
+
+.stemopons-share-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.share-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.share-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.share-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0,0,0,0.28);
+}
+
+.share-whatsapp  { background: #25D366; }
+.share-facebook  { background: #1877F2; }
+.share-linkedin  { background: #0A66C2; }
+.share-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.share-copylink  { background: rgba(255,255,255,0.22); color: #fff; }
+.share-copylink:hover { background: rgba(255,255,255,0.35); }
+
+.stemopons-share-copied {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+    min-height: 1.2em;
+    font-weight: 600;
+}
+
+.stemopons-poster-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.5rem 0;
+}
+
+.stemopons-poster {
+    width: min(780px, 160%);
+    max-width: none;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+/* Floating bubble CTA */
+.stemopons-bubble {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: #F5A623;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    max-width: 340px;
+    overflow: hidden;
+}
+
+.stemopons-bubble:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.32);
+}
+
+.stemopons-bubble-avatar {
+    flex-shrink: 0;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    overflow: hidden;
+    background: #E8920D;
+}
+
+.stemopons-bubble-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.stemopons-bubble-text {
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    padding: 0.6rem 1.1rem 0.6rem 0.5rem;
+    font-family: var(--font-primary);
+}
+
+.stemopons-bubble-text strong {
+    font-weight: 800;
+}
+
