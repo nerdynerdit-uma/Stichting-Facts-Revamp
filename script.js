@@ -180,21 +180,6 @@ if (currentPage === '' || currentPage === 'index.html') {
     document.querySelector('a[href="index.html"]')?.classList.add('active');
 }
 
-// Inject floating stem bubble on every page except stemopons.html
-if (currentPage !== 'stemopons.html') {
-    const bubble = document.createElement('a');
-    bubble.href = 'stemopons.html';
-    bubble.className = 'stemopons-bubble';
-    bubble.setAttribute('aria-label', 'Stem NU op ons als kanshebber voor een Appeltje van Oranje');
-    bubble.innerHTML = `
-        <span class="stemopons-bubble-avatar" aria-hidden="true">
-            <img src="images/gallery/kindje1.png" alt="">
-        </span>
-        <span class="stemopons-bubble-text"><strong>Stem NU</strong> op ons als kanshebber voor een Appeltje van Oranje.</span>
-    `;
-    document.body.appendChild(bubble);
-}
-
 // Copy-link button on stemopons page
 const copyBtn = document.getElementById('shareCopyBtn');
 if (copyBtn) {
